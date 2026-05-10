@@ -1,0 +1,133 @@
+<svg width="900" height="720" viewBox="0 0 900 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="720" rx="40" fill="#060B1F"/>
+  <rect x="36" y="42" width="828" height="636" rx="34" fill="#04091B" stroke="#111936" stroke-width="2"/>
+  <text x="770" y="118" fill="#F4F7FF" font-family="Georgia, serif" font-size="72" text-anchor="end">0</text>
+
+  <rect x="54" y="182" width="170" height="120" rx="28" fill="#F43636"/>
+  <rect x="54" y="188" width="170" height="120" rx="28" fill="#EF2E2E"/>
+  <text x="139" y="262" fill="#060B1F" font-family="Arial, sans-serif" font-size="54" font-weight="700" text-anchor="middle">C</text>
+
+  <rect x="254" y="182" width="170" height="120" rx="28" fill="#0F6D98"/>
+  <rect x="254" y="188" width="170" height="120" rx="28" fill="#1B9ADB"/>
+  <text x="339" y="258" fill="#041022" font-family="Arial, sans-serif" font-size="48" font-weight="700" text-anchor="middle">÷</text>
+
+  <rect x="454" y="182" width="170" height="120" rx="28" fill="#0F6D98"/>
+  <rect x="454" y="188" width="170" height="120" rx="28" fill="#1B9ADB"/>
+  <text x="539" y="258" fill="#041022" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">×</text>
+
+  <rect x="654" y="182" width="170" height="120" rx="28" fill="#0F6D98"/>
+  <rect x="654" y="188" width="170" height="120" rx="28" fill="#1B9ADB"/>
+  <text x="739" y="258" fill="#041022" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">−</text>
+
+  <g fill="#253149">
+    <rect x="54" y="322" width="170" height="120" rx="28"/>
+    <rect x="254" y="322" width="170" height="120" rx="28"/>
+    <rect x="454" y="322" width="170" height="120" rx="28"/>
+    <rect x="54" y="462" width="170" height="120" rx="28"/>
+    <rect x="254" y="462" width="170" height="120" rx="28"/>
+    <rect x="454" y="462" width="170" height="120" rx="28"/>
+    <rect x="654" y="462" width="170" height="120" rx="28"/>
+    <rect x="54" y="602" width="370" height="86" rx="28"/>
+  </g>
+
+  <g fill="#1B9ADB">
+    <rect x="654" y="322" width="170" height="120" rx="28"/>
+  </g>
+
+  <rect x="454" y="602" width="370" height="86" rx="28" fill="#20BB53"/>
+
+  <g fill="#F4F7FF" font-family="Georgia, serif" font-size="56" text-anchor="middle">
+    <text x="139" y="398">7</text>
+    <text x="339" y="398">8</text>
+    <text x="539" y="398">9</text>
+    <text x="739" y="398" font-family="Arial, sans-serif" font-weight="700">+</text>
+    <text x="139" y="538">4</text>
+    <text x="339" y="538">5</text>
+    <text x="539" y="538">6</text>
+    <text x="139" y="660">0</text>
+  </g>
+
+  <g fill="#F4F7FF" font-family="Georgia, serif" font-size="56" text-anchor="middle">
+    <text x="139" y="538" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+  </g>
+
+  <g fill="#F4F7FF" font-family="Georgia, serif" font-size="56" text-anchor="middle">
+    <text x="139" y="538" opacity="0">0</text>
+  </g>
+
+  <g fill="#F4F7FF" font-family="Georgia, serif" font-size="56" text-anchor="middle">
+    <text x="139" y="0" opacity="0">0</text>
+  </g>
+
+  <g fill="#F4F7FF" font-family="Georgia, serif" font-size="56" text-anchor="middle">
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="339" y="538">5</text>
+    <text x="539" y="538">6</text>
+    <text x="139" y="628" opacity="0">0</text>
+    <text x="739" y="538">.</text>
+  </g>
+
+  <g fill="#F4F7FF" font-family="Georgia, serif" font-size="56" text-anchor="middle">
+    <text x="139" y="598" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+  </g>
+
+  <g fill="#F4F7FF" font-family="Georgia, serif" font-size="56" text-anchor="middle">
+    <text x="139" y="538" opacity="0">0</text>
+    <text x="139" y="538" opacity="0">0</text>
+    <text x="139" y="538" opacity="0">0</text>
+    <text x="139" y="538" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="339" y="658">0</text>
+    <text x="639" y="658" fill="#041022" font-family="Arial, sans-serif" font-weight="700">=</text>
+  </g>
+
+  <g fill="#F4F7FF" font-family="Georgia, serif" font-size="56" text-anchor="middle">
+    <text x="139" y="538" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+  </g>
+
+  <g fill="#F4F7FF" font-family="Georgia, serif" font-size="56" text-anchor="middle">
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+  </g>
+
+  <g fill="#F4F7FF" font-family="Georgia, serif" font-size="56" text-anchor="middle">
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+  </g>
+
+  <g fill="#F4F7FF" font-family="Georgia, serif" font-size="56" text-anchor="middle">
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+    <text x="139" y="0" opacity="0">0</text>
+  </g>
+
+  <text x="450" y="704" fill="#B4B8CC" font-family="Georgia, serif" font-size="28" text-anchor="middle">Simple Portfolio Calculator</text>
+</svg>
