@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Briefcase, GraduationCap, ChevronRight } from 'lucide-react';
-import { experience, education } from '../data';
+import { usePortfolioData } from '../context/DataContext';
 import { cn } from '../lib/utils';
 
 export default function Experience() {
+  const { experience, education } = usePortfolioData();
   const [activeTab, setActiveTab] = useState<'work' | 'education'>('work');
 
   return (
@@ -73,7 +74,12 @@ export default function Experience() {
                       </span>
                     </div>
                     <ul className="space-y-4">
-                      {exp.description.map((item, i) => (
+                      {(Array.isArray(exp.description)
+                        ? exp.description
+                        : typeof exp.description === 'string'
+                        ? [exp.description]
+                        : []
+                      ).map((item, i) => (
                         <li key={i} className="flex items-start gap-3 text-slate-600 dark:text-slate-400">
                           <ChevronRight className="mt-1 flex-shrink-0 text-primary-600" size={18} />
                           <span>{item}</span>

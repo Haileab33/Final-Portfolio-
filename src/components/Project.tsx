@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Github, ExternalLink, Filter, X, ArrowRight } from 'lucide-react';
-import { projects } from '../data';
+import { usePortfolioData } from '../context/DataContext';
 import { cn } from '../lib/utils';
 import { Link } from 'react-router-dom';
 
-const categories = ['All', ...new Set(projects.map((project) => project.category))];
-
 export default function Projects() {
+  const { projects } = usePortfolioData();
   const [filter, setFilter] = useState('All');
-  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
+  const [selectedProject, setSelectedProject] = useState<(typeof projects)[0] | null>(null);
+
+  const categories = ['All', ...Array.from(new Set(projects.map((project) => project.category)))];
 
   const filteredProjects = projects.filter(
     (p) => filter === 'All' || p.category === filter

@@ -22,6 +22,7 @@ const getStorageItem = <T>(key: string, defaultData: T): T => {
 const setStorageItem = (key: string, data: any) => {
   try {
     localStorage.setItem(`portfolio_${key}`, JSON.stringify(data));
+    window.dispatchEvent(new Event('portfolio_data_updated'));
   } catch (e) {
     console.error('Failed to save to localStorage:', e);
   }

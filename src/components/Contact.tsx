@@ -9,12 +9,13 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
-import { personalInfo } from "../data";
+import { usePortfolioData } from "../context/DataContext";
 import { cn } from "../lib/utils";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xykbqawk";
 
 export default function Contact() {
+  const { personalInfo } = usePortfolioData();
   const [formState, setFormState] = useState({
     name: "",
     email: "",

@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Sun, Moon, Github as GithubIcon, Linkedin as LinkedinIcon, Mail } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import { usePortfolioData } from '../context/DataContext';
 import { cn } from '../lib/utils';
-import { personalInfo } from '../data';
 
 const navLinks = [
   { name: 'Home', to: { pathname: '/' }, match: '/' },
@@ -15,6 +15,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const { personalInfo } = usePortfolioData();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();

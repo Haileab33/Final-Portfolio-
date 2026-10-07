@@ -8,13 +8,14 @@ import Skills from '../components/Skills';
 import Experience from '../components/Experience';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
-import { personalInfo } from '../data';
+import { usePortfolioData } from '../context/DataContext';
 
 interface HomeProps {
   section?: string;
 }
 
 export default function Home({ section }: HomeProps) {
+  const { personalInfo } = usePortfolioData();
   const { hash } = useLocation();
 
   useEffect(() => {

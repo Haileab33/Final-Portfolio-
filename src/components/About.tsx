@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { Award, Briefcase, GraduationCap, Users } from "lucide-react";
-import { personalInfo, experience, education, certifications } from "../data";
+import { usePortfolioData } from "../context/DataContext";
 
 const stats = [
   { label: "Years Experience", value: "1+", icon: Briefcase },
@@ -11,6 +11,7 @@ const stats = [
 ];
 
 export default function About() {
+  const { personalInfo, experience, education, certifications } = usePortfolioData();
   return (
     <section id="about" className="py-24 bg-slate-50 dark:bg-slate-900/40">
       <div className="container-custom">

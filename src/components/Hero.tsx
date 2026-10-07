@@ -3,10 +3,11 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ReactTyped } from 'react-typed';
 import { Github, Linkedin, Mail, Send, FileText, ChevronDown } from 'lucide-react';
-import { personalInfo } from '../data';
+import { usePortfolioData } from '../context/DataContext';
 import { cn } from '../lib/utils';
 
 export default function Hero() {
+  const { personalInfo } = usePortfolioData();
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20">
       {/* Background elements */}

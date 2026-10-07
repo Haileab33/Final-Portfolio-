@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { skills } from '../data';
+import { usePortfolioData, getSkillIcon } from '../context/DataContext';
 import { cn } from '../lib/utils';
 
 export default function Skills() {
+  const { skills } = usePortfolioData();
+
   return (
     <section id="skills" className="py-24 bg-slate-950 text-white overflow-hidden">
       <div className="container-custom">
@@ -17,21 +19,23 @@ export default function Skills() {
         </div>
 
         <div className="grid gap-12 md:grid-cols-2">
-          {skills.map((group, groupIdx) => (
-            <motion.div
-              key={group.category}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: groupIdx * 0.1 }}
-              className="rounded-3xl border border-white/5 bg-white/5 p-10 backdrop-blur-sm"
-            >
-              <div className="mb-8 flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-600/20 text-primary-400">
-                  <group.icon size={28} />
+          {skills.map((group, groupIdx) => {
+            const IconComp = getSkillIcon(group.icon);
+            return (
+              <motion.div
+                key={group.category}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: groupIdx * 0.1 }}
+                className="rounded-3xl border border-white/5 bg-white/5 p-10 backdrop-blur-sm"
+              >
+                <div className="mb-8 flex items-center gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-600/20 text-primary-400">
+                    <IconComp size={28} />
+                  </div>
+                  <h4 className="font-display text-2xl font-bold">{group.category}</h4>
                 </div>
-                <h4 className="font-display text-2xl font-bold">{group.category}</h4>
-              </div>
 
               <div className="space-y-8">
                 {group.items.map((skill, skillIdx) => (
@@ -53,7 +57,8 @@ export default function Skills() {
                 ))}
               </div>
             </motion.div>
-          ))}
+          );
+        })}
         </div>
 
         {/* Floating tags at the bottom */}

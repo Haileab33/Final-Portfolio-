@@ -3,10 +3,11 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { ArrowLeft, Github, ExternalLink, ChevronRight } from 'lucide-react';
-import { projects, personalInfo } from '../data';
+import { usePortfolioData } from '../context/DataContext';
 import { cn } from '../lib/utils';
 
 export default function ProjectDetail() {
+  const { projects, personalInfo } = usePortfolioData();
   const { id } = useParams();
   const navigate = useNavigate();
   const project = projects.find((p) => p.id === id);

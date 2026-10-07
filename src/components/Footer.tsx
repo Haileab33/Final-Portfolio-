@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Github, Linkedin, Mail, Twitter, ChevronUp, Lock } from 'lucide-react';
-import { personalInfo } from '../data';
+import { usePortfolioData } from '../context/DataContext';
 
 export default function Footer() {
+  const { personalInfo } = usePortfolioData();
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };

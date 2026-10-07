@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
-import { testimonials } from '../data';
+import { usePortfolioData } from '../context/DataContext';
 import { cn } from '../lib/utils';
 
 export default function Testimonials() {
+  const { testimonials } = usePortfolioData();
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
+    if (!testimonials.length) return;
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % testimonials.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [testimonials.length]);
+
+  if (!testimonials || testimonials.length === 0) return null;
+
+  const activeIndex = current % testimonials.length;
+  const activeTestimonial = testimonials[activeIndex];
 
   const next = () => setCurrent((prev) => (prev + 1) % testimonials.length);
   const prev = () => setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
@@ -36,7 +43,7 @@ export default function Testimonials() {
 
           <AnimatePresence mode="wait">
             <motion.div
-              key={current}
+              key={activeIndex}
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
@@ -45,14 +52,14 @@ export default function Testimonials() {
             >
               <div className="relative z-10 flex flex-col items-center text-center">
                 <p className="mb-10 text-xl font-medium italic leading-relaxed text-slate-700 dark:text-slate-300 md:text-2xl lg:text-3xl">
-                  "{testimonials[current].content}"
+                  "{activeTestimonial.content}"
                 </p>
                 <div className="text-center">
                   <h5 className="text-lg font-bold text-slate-900 dark:text-white">
-                    {testimonials[current].name}
+                    {activeTestimonial.name}
                   </h5>
                   <p className="text-sm font-medium text-primary-600">
-                    {testimonials[current].role}
+                    {activeTestimonial.role}
                   </p>
                 </div>
               </div>
