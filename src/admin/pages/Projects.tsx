@@ -227,6 +227,13 @@ export const Projects = () => {
                   />
                   <input
                     type="text"
+                    value={editForm.image || ''}
+                    onChange={(e) => setEditForm({ ...editForm, image: e.target.value })}
+                    placeholder="Image URL (e.g., https://...)"
+                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white text-sm"
+                  />
+                  <input
+                    type="text"
                     value={editForm.github || ''}
                     onChange={(e) => setEditForm({ ...editForm, github: e.target.value })}
                     placeholder="GitHub URL"
@@ -350,12 +357,28 @@ export const Projects = () => {
                 />
               </div>
               <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Image URL</label>
+                <input
+                  type="text"
+                  value={newProject.image || ''}
+                  onChange={(e) => setNewProject({ ...newProject, image: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                  placeholder="https://images.unsplash.com/... or /project-image.png"
+                />
+                {newProject.image && (
+                  <div className="mt-2 h-28 w-full rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
+                    <img src={newProject.image} alt="Preview" className="h-full w-full object-cover" />
+                  </div>
+                )}
+              </div>
+              <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">GitHub URL</label>
                 <input
                   type="text"
                   value={newProject.github || ''}
                   onChange={(e) => setNewProject({ ...newProject, github: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                  placeholder="https://github.com/username/project"
                 />
               </div>
               <div>
@@ -365,6 +388,7 @@ export const Projects = () => {
                   value={newProject.link || ''}
                   onChange={(e) => setNewProject({ ...newProject, link: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                  placeholder="https://project-demo.com"
                 />
               </div>
             </div>

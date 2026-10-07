@@ -88,11 +88,6 @@ export const Login = () => {
               {isLoading ? 'Signing in...' : 'Sign In'}
             </button>
           </form>
-
-          <div className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
-            <p>Default credentials: admin@example.com / admin123</p>
-            <p className="mt-1 text-xs">Change these in production!</p>
-          </div>
         </div>
       </div>
     </div>
