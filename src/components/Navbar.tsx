@@ -7,11 +7,11 @@ import { cn } from '../lib/utils';
 import { personalInfo } from '../data';
 
 const navLinks = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/#about' },
-  { name: 'Projects', href: '/#projects' },
-  { name: 'Skills', href: '/#skills' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Home', to: { pathname: '/' }, match: '/' },
+  { name: 'About', to: { pathname: '/', hash: '#about' }, match: '/#about' },
+  { name: 'Projects', to: { pathname: '/', hash: '#projects' }, match: '/#projects' },
+  { name: 'Skills', to: { pathname: '/', hash: '#skills' }, match: '/#skills' },
+  { name: 'Contact', to: '/contact', match: '/contact' },
 ];
 
 export default function Navbar() {
@@ -51,18 +51,18 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden items-center space-x-8 md:flex">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.to}
               className={cn(
                 'text-sm font-medium transition-colors hover:text-primary-600 dark:hover:text-primary-400',
-                location.pathname + location.hash === link.href
+                location.pathname + location.hash === link.match
                   ? 'text-primary-600 dark:text-primary-400'
                   : 'text-slate-600 dark:text-slate-400'
               )}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           <button
             onClick={toggleTheme}
@@ -103,14 +103,14 @@ export default function Navbar() {
           >
             <div className="container-custom flex flex-col space-y-4 py-8">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
+                  to={link.to}
                   className="text-xl font-medium text-slate-600 dark:text-slate-400"
                   onClick={closeMenu}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
               <div className="flex space-x-6 pt-4">
                 <a href={personalInfo.github} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-primary-600">

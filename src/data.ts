@@ -1,5 +1,7 @@
 import { Code, Layout, PenTool, Terminal } from 'lucide-react';
 
+const assetPath = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 export const personalInfo = {
   name: 'Haileab Gashaw',
   title: 'Junior Frontend Web Developer',
@@ -66,7 +68,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/Haileab33/calculator',
     link: 'https://haileab33.github.io/calculator/',
-    image: '/calculator-project.svg',
+    image: assetPath('calculator-project.svg'),
     category: 'Frontend',
     featured: false
   },
@@ -114,7 +116,7 @@ export const projects = [
     tech: ['React', 'CSS', 'JavaScript'],
     github: 'https://github.com/Haileab33/Aether-chat',
     link: 'https://haileab33.github.io/Aether-chat/',
-    image: '/aether-chat-project.svg',
+    image: assetPath('aether-chat-project.svg'),
     category: 'React',
     featured: false
   },
@@ -135,7 +137,7 @@ export const projects = [
     title: 'Telegram-Theme-bot',
     description: 'A Telegram bot project centered on theme-related automation and customization workflows.',
     longDescription: 'This project focuses on bot-oriented logic and integration ideas, showing how product utility can be delivered through a simple repository-driven tool.',
-    tech: ['JavaScript', 'Bot', 'GitHub'],
+    tech: ['Python', 'Bot', 'GitHub'],
     github: 'https://github.com/Haileab33/telegram-theme-bot',
     link: '',
     image: 'https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800&auto=format&fit=crop&q=60',

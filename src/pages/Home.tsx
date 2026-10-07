@@ -36,11 +36,11 @@ export default function Home({ section }: HomeProps) {
   return (
     <>
       <Helmet>
-        <title>{personalInfo.name} | Portfolio</title>
+        <title>Haileab Portfolio</title>
         <meta name="description" content={personalInfo.bio} />
-        <meta property="og:title" content={`${personalInfo.name} | Portfolio`} />
+        <meta property="og:title" content="Haileab Portfolio" />
         <meta property="og:description" content={personalInfo.bio} />
-        <meta name="twitter:title" content={`${personalInfo.name} | Portfolio`} />
+        <meta name="twitter:title" content="Haileab Portfolio" />
       </Helmet>
 
       <Hero />

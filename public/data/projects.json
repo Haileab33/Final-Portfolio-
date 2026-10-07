@@ -1,0 +1,98 @@
+[
+  {
+    "id": "calculator",
+    "title": "Calculator Web App",
+    "description": "Built a responsive calculator using vanilla JavaScript with clean UI and accurate calculation logic.",
+    "longDescription": "This project was a deep dive into DOM manipulation and event handling without external libraries. It features a fully responsive design and supports standard arithmetic operations.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/Haileab33/calculator",
+    "link": "https://haileab33.github.io/calculator/",
+    "image": "/calculator-project.svg",
+    "category": "Frontend",
+    "featured": false
+  },
+  {
+    "id": "landing-page",
+    "title": "Landing Page Website",
+    "description": "Designed and developed a responsive marketing landing page focused on accessibility and UX.",
+    "longDescription": "Optimized structure for better readability and SEO basics. Used modern CSS techniques for layout and animations.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/Haileab33/Landing-page",
+    "link": "https://haileab33.github.io/Landing-page/",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+    "category": "Frontend",
+    "featured": true
+  },
+  {
+    "id": "todo-list",
+    "title": "Todo List Application",
+    "description": "Created a todo app with JavaScript DOM manipulation and localStorage for persistence.",
+    "longDescription": "Strengthened frontend logic and clean code practices. Features include adding, deleting, and marking tasks as complete.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/Haileab33/todo-list",
+    "link": "https://haileab33.github.io/todo-list/",
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=60",
+    "category": "Frontend",
+    "featured": false
+  },
+  {
+    "id": "design-portfolio",
+    "title": "Graphic Design Showcase",
+    "description": "A collection of logos, posters, and social media graphics designed for various clients.",
+    "longDescription": "Showcases proficiency in Figma, Adobe Photoshop, and Illustrator. Projects focus on brand identity and visual storytelling.",
+    "tech": ["Figma", "Photoshop", "Illustrator"],
+    "github": "#",
+    "link": "#",
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+    "category": "Design",
+    "featured": false
+  },
+  {
+    "id": "aether-chat",
+    "title": "Aether Chat",
+    "description": "A chat-focused web app project with a clean interface built for modern communication workflows.",
+    "longDescription": "Aether Chat highlights frontend structure, polished UI decisions, and a streamlined user experience for a messaging product concept.",
+    "tech": ["React", "CSS", "JavaScript"],
+    "github": "https://github.com/Haileab33/Aether-chat",
+    "link": "https://haileab33.github.io/Aether-chat/",
+    "image": "/aether-chat-project.svg",
+    "category": "React",
+    "featured": false
+  },
+  {
+    "id": "budget-lite",
+    "title": "Budget Lite",
+    "description": "A lightweight budgeting app focused on tracking spending with a simple and practical interface.",
+    "longDescription": "Budget Lite showcases clean layout decisions, personal finance tracking flows, and a responsive interface designed to stay easy to use across devices.",
+    "tech": ["React", "CSS", "JavaScript"],
+    "github": "https://github.com/Haileab33/budget-lite",
+    "link": "https://haileab33.github.io/budget-lite/",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&auto=format&fit=crop&q=60",
+    "category": "React",
+    "featured": false
+  },
+  {
+    "id": "telegram-theme-bot",
+    "title": "Telegram-Theme-bot",
+    "description": "A Telegram bot project centered on theme-related automation and customization workflows.",
+    "longDescription": "This project focuses on bot-oriented logic and integration ideas, showing how product utility can be delivered through a simple repository-driven tool.",
+    "tech": ["Python", "Bot", "GitHub"],
+    "github": "https://github.com/Haileab33/telegram-theme-bot",
+    "link": "",
+    "image": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800&auto=format&fit=crop&q=60",
+    "category": "Frontend",
+    "featured": false
+  },
+  {
+    "id": "my-wwebsite",
+    "title": "MY-Wwebsite",
+    "description": "A personal website project built to present content, branding, and core web development work.",
+    "longDescription": "MY-Wwebsite brings together personal branding, responsive page structure, and public deployment through GitHub Pages in one complete portfolio-style site.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/Haileab33/MY-Wwebsite",
+    "link": "https://haileab33.github.io/MY-Wwebsite/",
+    "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&auto=format&fit=crop&q=60",
+    "category": "Frontend",
+    "featured": false
+  }
+]

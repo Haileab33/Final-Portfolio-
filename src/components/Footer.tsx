@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Mail, Twitter, ChevronUp } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter, ChevronUp, Lock } from 'lucide-react';
 import { personalInfo } from '../data';
 
 export default function Footer() {
@@ -57,13 +57,19 @@ export default function Footer() {
                 <Link to="/" className="hover:text-primary-600">Home</Link>
               </li>
               <li>
-                <a href="/#about" className="hover:text-primary-600">About</a>
+                <Link to={{ pathname: '/', hash: '#about' }} className="hover:text-primary-600">About</Link>
               </li>
               <li>
-                <a href="/#projects" className="hover:text-primary-600">Projects</a>
+                <Link to={{ pathname: '/', hash: '#projects' }} className="hover:text-primary-600">Projects</Link>
               </li>
               <li>
                 <Link to="/contact" className="hover:text-primary-600">Contact</Link>
+              </li>
+              <li>
+                <Link to="/admin/login" className="flex items-center gap-2 hover:text-primary-600">
+                  <Lock size={14} />
+                  <span>Admin</span>
+                </Link>
               </li>
             </ul>
           </div>

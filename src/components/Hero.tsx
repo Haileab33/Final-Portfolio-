@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { ReactTyped } from 'react-typed';
 import { Github, Linkedin, Mail, Send, FileText, ChevronDown } from 'lucide-react';
 import { personalInfo } from '../data';
@@ -78,15 +79,15 @@ export default function Hero() {
             transition={{ delay: 0.5 }}
             className="flex flex-wrap items-center justify-center gap-4"
           >
-            <a href="#projects" className="btn btn-primary shadow-lg shadow-primary-500/30">
+            <Link to={{ pathname: '/', hash: '#projects' }} className="btn btn-primary shadow-lg shadow-primary-500/30">
               View Work <ChevronDown className="ml-2" size={20} />
-            </a>
-            <a href="/contact" className="btn btn-secondary">
+            </Link>
+            <Link to="/contact" className="btn btn-secondary">
               Contact Me <Send className="ml-2" size={18} />
-            </a>
+            </Link>
             <a
-              href="/Junior-Web-Developer.pdf"
-              download="Junior Web Developer.pdf"
+              href={`${import.meta.env.BASE_URL}Haileab-CV.pdf`}
+              download="Haileab CV.pdf"
               className="btn bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-300 dark:hover:bg-slate-800"
             >
               <FileText className="mr-2" size={18} /> Resume (PDF)
